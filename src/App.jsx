@@ -1,19 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Login from "./Pages/Login"
-import Register from "./Pages/Register"
-import Chat from "./Pages/Chat"
-
 function App() {
-  return(
-    <BrowserRouter>
-    <Routes>                      
-    <Route path="/login" element ={<Login />}/>
-    <Route path="/register" element ={<Register />}/>
-    <Route path="/chat" element ={<Chat />}/>
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-900">
+      <h1 className="text-4xl font-bold text-white">
+        🍒 Cherrybot (Tailwind Ready)
+      </h1>
+    </div>
+  )
+}
 
-    {/* default route */}
-    <Route path="*" element ={<Login />}/>
-      </Routes>
-    </BrowserRouter>
-  )}
 export default App
